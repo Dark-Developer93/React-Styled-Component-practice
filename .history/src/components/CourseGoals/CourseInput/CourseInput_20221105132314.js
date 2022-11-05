@@ -11,7 +11,6 @@ const FormControl = styled.div`
     font-weight: bold;
     display: block;
     margin-bottom: 0.5rem;
-    color: ${(props) => (props.invalid ? "red" : "black")};
   }
 
   & input {
@@ -28,6 +27,10 @@ const FormControl = styled.div`
     outline: none;
     background: #fad0ec;
     border-color: #8b005d;
+  }
+
+  &.invalid label {
+    color: red;
   }
 `;
 
